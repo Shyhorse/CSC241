@@ -23,13 +23,14 @@ print(f)
 first =input("Please input your first name :")
 last = input("Please input your last name :")
 print(f"Your name is {last}, {first}")
-
+#print("Your name is ", last, ", ", first)
 
 #spacer
 
 
 #problem 3
-bill = float(input("Please enter bill amount :"))
-percent = int(input("Please enter tip percentage :"))
-Total = bill * ((percent)/100)
-print(f"The tip for a bill of ${bill} at {percent}% is {Total}.")
+bill= float(input("Enter bill here :"))
+tip= int(input("Enter tip amount here :"))
+Total= (float(bill*(tip/100)+bill))
+print(Total)
+print(f"The tip for a bill of {bill} at {tip}% is {Total}")
