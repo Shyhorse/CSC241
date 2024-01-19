@@ -2,26 +2,38 @@
 s1 ='&'
 s2 = '#'
 
-#your code here
+a=(s1*2+s2)
+b=(s1*4+s2*2)
+c=(s1*3+s2)*2
+d=(s1*10)
+e=(s1*2+s2*2)*3
+f=(s1*5+s2*5)*3
  
 
 #spacer
-print()
-print()
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print(f)
 
 #problem 2
 
-first = "" #your code here
-last = "" #your code here
-print("") #your code here
+first =input("Please input your first name :")
+last = input("Please input your last name :")
+print(f"Your name is {last}, {first}")
 
 
 #spacer
-print()
-print()
+
 
 #problem 3
 
-bill = "" #your code here
-percent = "" #your code here
-#your code here
+bill = float(input("Please enter bill amount :"))
+percent = int(input("Please enter tip percentage :"))
+Total = bill * ((percent)/100)
+print(f"The tip for a bill of ${bill} at {percent}% is {Total:.2f}.")
+
+
+#Total= float({bill}+{bill}/{percent})
